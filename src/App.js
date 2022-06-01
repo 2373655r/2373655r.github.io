@@ -22,6 +22,9 @@ function App() {
       { <header className="App-header">
         <h1>Rhodri Rees</h1>
         <h3>Computer Scientist</h3>
+        <h3>rhodriarees@gmail.com</h3>
+        <h3>(+44) 07380-321-911</h3>
+        <h3>2373655r github</h3>
       </header>}
     
 
@@ -65,10 +68,14 @@ background of maths and physics.
           <p>
           Standard level: Spanish, English, Economics
           </p>
+
+          <h2> Languages </h2>
+          <h5> Python \ Java \ C \ SQL </h5>
         </div>
       </div>
     </div>
   );
 }
+
 
 export default App;
