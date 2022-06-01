@@ -28,16 +28,24 @@ function App() {
       <div class='App-container'>
         <div className="App-left">
           <h2> About Me</h2>
-          <img className="img-fluid" 
-          src={`${process.env.PUBLIC_URL}/assets/5.png`} 
-          alt="Me"/>
           <p>
           Third year computing science student with a wide variety of experience 
 both academic and extracurricular now looking to gain real world skill. 
 Tenacious, creative, and self-motivated. Passionate about cyber security 
 and human-computer interaction. Strong problem solving skills with a 
 background of maths and physics.
-
+          </p>
+          <h2> Interests</h2>
+          <h5> Rugby </h5>
+          <p>
+          Glasgow University Rugby Football Club
+          </p>
+          <h5> Videogames </h5>
+          <p>
+          Glasgow University Esports Team
+          </p>
+          <p>
+          Participated in five game jams
           </p>
         </div>
         <div className="App-right">

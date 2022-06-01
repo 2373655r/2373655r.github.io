@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #282c34;
+  word-break: break-all;
 }
 
 .App-logo {
@@ -19,7 +20,19 @@ a{
 }
 
 p{
-  margin: 2px;
+  margin: 0;
+  text-align: left;
+  font-size: 15px;
+  color: #90e7ff;
+}
+
+h1{
+  margin: 0px;
+}
+
+h2{
+  margin-bottom: 10;
+  font-size: 30px;
 }
 
 h3{
@@ -27,9 +40,12 @@ h3{
   font-size: 15px;
 }
 
-h1{
-  margin: 0px;
+h5{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -40,9 +56,6 @@ h1{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-image: url('assets/space2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .App-link {
@@ -73,9 +86,9 @@ h1{
 }
 
 .App-container{
+  text-align: left;
   display: flex;
   flex-direction: row;
-  background-color: black;
   margin: 30px;
   border-radius: 25px;
 }
@@ -95,21 +108,11 @@ h1{
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: #61dafb;
-  flex: 40%;
-  padding: 20px;
-  background-color: #202329;
+  flex: 50%;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #101113;
   margin: 40px;
-}
-
-.App-left p{
-  text-align: left;
-  font-size: 15px;
-  color: #90e7ff;
-  margin-top: 30px;
-}
-
-.App-left h2{
-  font-size: 30px;
 }
 
 .App-right{
@@ -119,22 +122,11 @@ h1{
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: #61dafb;
-  background-color: #202329;
-  flex: 70%;
-  padding: 20px;
+  background-color: #101113;
+  flex: 50%;
+  padding-left: 60px;
+  padding-right: 60px;
   margin: 40px;
-}
-
-.App-right h2{
-  font-size: 30px;
-}
-
-.App-right h5{
-  font-size: 20px;
-}
-
-.App-right p{
-  font-size: 15px;
 }
 
 @keyframes App-logo-spin {
