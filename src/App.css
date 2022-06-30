@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: white;
   word-break: break-all;
 
 }
@@ -20,13 +20,14 @@
 
 a{
   font-size: 15px;
+  text-decoration: none;
 }
 
 p{
   margin: 0;
   text-align: left;
   font-size: 15px;
-  color: #90e7ff;
+  color: white;
 }
 
 h1{
@@ -52,13 +53,34 @@ h5{
 
 .App-header {
   background-color: #282c34;
-  min-height: 30vh;
-  display: flex;
-  flex-direction: column;
+  min-height: 20vh;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-bottom: 30px;
+}
+
+.Contact{
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.Contact-left{
+  display:inline-block;
+  font-size: calc(10px + 2vmin);
+  flex: 50%;
+  margin: 40px;
+  text-align: center;
+}
+
+.Contact-right{
+  display:inline-block;
+  font-size: calc(10px + 2vmin);
+  flex: 50%;
+  margin: 40px;
+  text-align: center;
 }
 
 .App-link {
@@ -91,7 +113,7 @@ h5{
 .App-container{
   text-align: left;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 30px;
   border-radius: 25px;
 }
@@ -105,8 +127,6 @@ h5{
 }
 
 .App-left {
-  border: 3px solid #820263;
-  border-radius: 25px;
   display:flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
@@ -121,8 +141,6 @@ h5{
 }
 
 .App-right{
-  border: 3px solid #820263;
-  border-radius: 25px;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
@@ -143,4 +161,54 @@ h5{
   to {
     transform: rotate(360deg);
   }
+}
+
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.image-container{
+  width: 300px;
+  height: 200px;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.each-slide-effect h2{
+  font-size: 30px;
+}
+
+.each-slide-effect h3{
+  font-size: 20px;
 }

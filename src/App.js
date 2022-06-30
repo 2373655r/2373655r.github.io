@@ -1,32 +1,64 @@
 import './App.css';
+import React from 'react';
+import Tabs from "./components/Tabs";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import './UIKit.css';
 
 function App() {
+
   return (
     <div className="App">
-      <div className="App-navbar">
-      <a 
-        className="App-link"
-        href="/#"
-      >
-        Overview</a>
-      <a 
-      className="App-link"
-      href="/#"
-      >
-        Projects
-        </a>
-      </div>
-
-
-
       { <header className="App-header">
         <h1>Rhodri Rees</h1>
-        <h3>Computer Scientist</h3>
+        <h3>B.Sc Computer Science</h3>
+        <div class="Contact">
+        <div className="Contact-left">
         <h3>rhodriarees@gmail.com</h3>
         <h3>(+44) 07380-321-911</h3>
-        <h3>2373655r github</h3>
+        <h3>Cardiff, Wales</h3>
+        </div>
+        <div className="Contact-right">
+        <h3>Linkedin</h3>
+        <h3>Github</h3>
+        <h3>Itch.io</h3>
+        </div>
+        
+      </div>
+      <a class="btn btn-primary" href='/CV.pdf' download  data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
       </header>}
-    
+
+      
+
+      <Tabs>
+        <div label="Games">
+          <Slide duration={100000} canSwipe={false} indicators={true} transitionDuration={500} slidesToShow={2}>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/Collide.png')} alt="Collide" />
+              </div>
+              </center>
+              <h2>Worlds Collide</h2>
+              <h3>Puzzle Game</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+            </div>
+          </Slide>
+          
+        </div>
+        <div label="Croc">
+          After 'while, <em>Crocodile</em>!
+        </div>
+        <div label="Sarcosuchus">
+          Nothing to see here, this tab is <em>extinct</em>!
+        </div>
+      </Tabs>
 
       <div class='App-container'>
         <div className="App-left">
@@ -51,7 +83,7 @@ background of maths and physics.
           Participated in five game jams
           </p>
         </div>
-        <div className="App-right">
+        <div className="App-left">
           <h2> Experience </h2>
           <h5> University of Glasgow,  UK 2018 – 2022 </h5>
           <p> On track for First-Class Honours in Computing Science, BSc 
