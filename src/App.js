@@ -32,7 +32,7 @@ function App() {
 
       <Tabs>
         <div label="Games">
-          <Slide duration={100000} canSwipe={false} indicators={true} transitionDuration={500} slidesToShow={2}>
+          <Slide duration={100000} canSwipe={false} indicators={true} transitionDuration={500} slidesToShow={1}>
             <div className="each-slide-effect">
               <center>
               <div className="image-container">
@@ -48,15 +48,100 @@ function App() {
               <img src={require('./assets/space2.jpg')} alt="Collide" />
               </div>
               </center>
+              <h2>Crane</h2>
+              <h3>Runner</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+              <h2>Crab</h2>
+              <h3>Platformer</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+              <h2>N-th Space</h2>
+              <h3>Puzzler</h3>
             </div>
           </Slide>
           
         </div>
-        <div label="Croc">
-          After 'while, <em>Crocodile</em>!
+        <div label="Academic Work">
+        <Slide duration={100000} canSwipe={false} indicators={true} transitionDuration={500} slidesToShow={1}>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/Collide.png')} alt="Collide" />
+              </div>
+              </center>
+              <h2>Glasgow Food Guide</h2>
+              <h3>Website for reccomending restaurants</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+              <h2>Trypadvisor</h2>
+              <h3>Website for reporting cases of sleeping sickness</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+              <h2>MussiPass</h2>
+              <h3>Prototype musical password</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+              <h2>Facebook info viewer</h2>
+              <h3>Interactive visualization for Facebook's GDPR .zip</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+              <h2>BTA</h2>
+              <h3>Gamified text annotation system</h3>
+            </div>
+          </Slide>
         </div>
-        <div label="Sarcosuchus">
-          Nothing to see here, this tab is <em>extinct</em>!
+        <div label="Side Projects">
+        <Slide duration={100000} canSwipe={false} indicators={true} transitionDuration={500} slidesToShow={1}>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/Collide.png')} alt="Collide" />
+              </div>
+              </center>
+              <h2>Glasgow Uni Esports League Bot</h2>
+              <h3>Discord bot to rank members</h3>
+            </div>
+            <div className="each-slide-effect">
+              <center>
+              <div className="image-container">
+              <img src={require('./assets/space2.jpg')} alt="Collide" />
+              </div>
+              </center>
+              <h2>Wisdom teeth</h2>
+              <h3>App that gives interesting facts for people brushing their teeth</h3>
+            </div>
+          </Slide>
         </div>
       </Tabs>
 
